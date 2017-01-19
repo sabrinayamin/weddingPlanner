@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E34A3B5F1E3045A500842498 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E34A3B5E1E3045A500842498 /* main.m */; };
+		E34A3B621E3045A500842498 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E34A3B611E3045A500842498 /* AppDelegate.m */; };
+		E34A3B651E3045A500842498 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E34A3B641E3045A500842498 /* ViewController.m */; };
+		E34A3B681E3045A500842498 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E34A3B661E3045A500842498 /* Main.storyboard */; };
+		E34A3B6A1E3045A500842498 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E34A3B691E3045A500842498 /* Assets.xcassets */; };
+		E34A3B6D1E3045A500842498 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E34A3B6B1E3045A500842498 /* LaunchScreen.storyboard */; };
+		E34A3B781E3045A500842498 /* WPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E34A3B771E3045A500842498 /* WPTests.m */; };
+		E34A3B831E3045A500842498 /* WPUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E34A3B821E3045A500842498 /* WPUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E34A3B741E3045A500842498 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E34A3B521E3045A400842498 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E34A3B591E3045A500842498;
+			remoteInfo = WP;
+		};
+		E34A3B7F1E3045A500842498 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E34A3B521E3045A400842498 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E34A3B591E3045A500842498;
+			remoteInfo = WP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E34A3B5A1E3045A500842498 /* WP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E34A3B5E1E3045A500842498 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E34A3B601E3045A500842498 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E34A3B611E3045A500842498 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E34A3B631E3045A500842498 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E34A3B641E3045A500842498 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E34A3B671E3045A500842498 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E34A3B691E3045A500842498 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E34A3B6C1E3045A500842498 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E34A3B6E1E3045A500842498 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E34A3B731E3045A500842498 /* WPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E34A3B771E3045A500842498 /* WPTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPTests.m; sourceTree = "<group>"; };
+		E34A3B791E3045A500842498 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E34A3B7E1E3045A500842498 /* WPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E34A3B821E3045A500842498 /* WPUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPUITests.m; sourceTree = "<group>"; };
+		E34A3B841E3045A500842498 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E34A3B571E3045A500842498 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E34A3B701E3045A500842498 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E34A3B7B1E3045A500842498 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E34A3B511E3045A400842498 = {
+			isa = PBXGroup;
+			children = (
+				E34A3B5C1E3045A500842498 /* WP */,
+				E34A3B761E3045A500842498 /* WPTests */,
+				E34A3B811E3045A500842498 /* WPUITests */,
+				E34A3B5B1E3045A500842498 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E34A3B5B1E3045A500842498 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E34A3B5A1E3045A500842498 /* WP.app */,
+				E34A3B731E3045A500842498 /* WPTests.xctest */,
+				E34A3B7E1E3045A500842498 /* WPUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E34A3B5C1E3045A500842498 /* WP */ = {
+			isa = PBXGroup;
+			children = (
+				E34A3B601E3045A500842498 /* AppDelegate.h */,
+				E34A3B611E3045A500842498 /* AppDelegate.m */,
+				E34A3B631E3045A500842498 /* ViewController.h */,
+				E34A3B641E3045A500842498 /* ViewController.m */,
+				E34A3B661E3045A500842498 /* Main.storyboard */,
+				E34A3B691E3045A500842498 /* Assets.xcassets */,
+				E34A3B6B1E3045A500842498 /* LaunchScreen.storyboard */,
+				E34A3B6E1E3045A500842498 /* Info.plist */,
+				E34A3B5D1E3045A500842498 /* Supporting Files */,
+			);
+			path = WP;
+			sourceTree = "<group>";
+		};
+		E34A3B5D1E3045A500842498 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E34A3B5E1E3045A500842498 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E34A3B761E3045A500842498 /* WPTests */ = {
+			isa = PBXGroup;
+			children = (
+				E34A3B771E3045A500842498 /* WPTests.m */,
+				E34A3B791E3045A500842498 /* Info.plist */,
+			);
+			path = WPTests;
+			sourceTree = "<group>";
+		};
+		E34A3B811E3045A500842498 /* WPUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E34A3B821E3045A500842498 /* WPUITests.m */,
+				E34A3B841E3045A500842498 /* Info.plist */,
+			);
+			path = WPUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E34A3B591E3045A500842498 /* WP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E34A3B871E3045A500842498 /* Build configuration list for PBXNativeTarget "WP" */;
+			buildPhases = (
+				E34A3B561E3045A500842498 /* Sources */,
+				E34A3B571E3045A500842498 /* Frameworks */,
+				E34A3B581E3045A500842498 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WP;
+			productName = WP;
+			productReference = E34A3B5A1E3045A500842498 /* WP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E34A3B721E3045A500842498 /* WPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E34A3B8A1E3045A500842498 /* Build configuration list for PBXNativeTarget "WPTests" */;
+			buildPhases = (
+				E34A3B6F1E3045A500842498 /* Sources */,
+				E34A3B701E3045A500842498 /* Frameworks */,
+				E34A3B711E3045A500842498 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E34A3B751E3045A500842498 /* PBXTargetDependency */,
+			);
+			name = WPTests;
+			productName = WPTests;
+			productReference = E34A3B731E3045A500842498 /* WPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E34A3B7D1E3045A500842498 /* WPUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E34A3B8D1E3045A500842498 /* Build configuration list for PBXNativeTarget "WPUITests" */;
+			buildPhases = (
+				E34A3B7A1E3045A500842498 /* Sources */,
+				E34A3B7B1E3045A500842498 /* Frameworks */,
+				E34A3B7C1E3045A500842498 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E34A3B801E3045A500842498 /* PBXTargetDependency */,
+			);
+			name = WPUITests;
+			productName = WPUITests;
+			productReference = E34A3B7E1E3045A500842498 /* WPUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E34A3B521E3045A400842498 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Sabrina Yamin";
+				TargetAttributes = {
+					E34A3B591E3045A500842498 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					E34A3B721E3045A500842498 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E34A3B591E3045A500842498;
+					};
+					E34A3B7D1E3045A500842498 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E34A3B591E3045A500842498;
+					};
+				};
+			};
+			buildConfigurationList = E34A3B551E3045A400842498 /* Build configuration list for PBXProject "WP" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E34A3B511E3045A400842498;
+			productRefGroup = E34A3B5B1E3045A500842498 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E34A3B591E3045A500842498 /* WP */,
+				E34A3B721E3045A500842498 /* WPTests */,
+				E34A3B7D1E3045A500842498 /* WPUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E34A3B581E3045A500842498 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E34A3B6D1E3045A500842498 /* LaunchScreen.storyboard in Resources */,
+				E34A3B6A1E3045A500842498 /* Assets.xcassets in Resources */,
+				E34A3B681E3045A500842498 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E34A3B711E3045A500842498 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E34A3B7C1E3045A500842498 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E34A3B561E3045A500842498 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E34A3B651E3045A500842498 /* ViewController.m in Sources */,
+				E34A3B621E3045A500842498 /* AppDelegate.m in Sources */,
+				E34A3B5F1E3045A500842498 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E34A3B6F1E3045A500842498 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E34A3B781E3045A500842498 /* WPTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E34A3B7A1E3045A500842498 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E34A3B831E3045A500842498 /* WPUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E34A3B751E3045A500842498 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E34A3B591E3045A500842498 /* WP */;
+			targetProxy = E34A3B741E3045A500842498 /* PBXContainerItemProxy */;
+		};
+		E34A3B801E3045A500842498 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E34A3B591E3045A500842498 /* WP */;
+			targetProxy = E34A3B7F1E3045A500842498 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E34A3B661E3045A500842498 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E34A3B671E3045A500842498 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E34A3B6B1E3045A500842498 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E34A3B6C1E3045A500842498 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E34A3B851E3045A500842498 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E34A3B861E3045A500842498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E34A3B881E3045A500842498 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sab.WP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E34A3B891E3045A500842498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sab.WP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E34A3B8B1E3045A500842498 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WPTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sab.WPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WP.app/WP";
+			};
+			name = Debug;
+		};
+		E34A3B8C1E3045A500842498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WPTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sab.WPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WP.app/WP";
+			};
+			name = Release;
+		};
+		E34A3B8E1E3045A500842498 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WPUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sab.WPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WP;
+			};
+			name = Debug;
+		};
+		E34A3B8F1E3045A500842498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WPUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sab.WPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WP;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E34A3B551E3045A400842498 /* Build configuration list for PBXProject "WP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E34A3B851E3045A500842498 /* Debug */,
+				E34A3B861E3045A500842498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E34A3B871E3045A500842498 /* Build configuration list for PBXNativeTarget "WP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E34A3B881E3045A500842498 /* Debug */,
+				E34A3B891E3045A500842498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E34A3B8A1E3045A500842498 /* Build configuration list for PBXNativeTarget "WPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E34A3B8B1E3045A500842498 /* Debug */,
+				E34A3B8C1E3045A500842498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E34A3B8D1E3045A500842498 /* Build configuration list for PBXNativeTarget "WPUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E34A3B8E1E3045A500842498 /* Debug */,
+				E34A3B8F1E3045A500842498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E34A3B521E3045A400842498 /* Project object */;
+}
