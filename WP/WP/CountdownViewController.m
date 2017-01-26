@@ -7,7 +7,7 @@
 //
 
 #import "CountdownViewController.h"
-#import "HomeViewController.h"
+
 
 @interface CountdownViewController ()
 
@@ -17,8 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
+    // make date picker color white
     [_datePicker setValue:[UIColor whiteColor] forKeyPath:@"textColor"];
 }
 
@@ -28,33 +28,36 @@
 }
 
 
+//countdown functionality
 - (IBAction)startCountdown:(id)sender {
-    //Remove the time component from the datePicker.  We care only about the date
+    
+    //setting up date picker dates/calender
     NSCalendar *calendar = [NSCalendar autoupdatingCurrentCalendar];
     NSUInteger preservedComponents = (NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit);
     self.datePicker.date = [calendar dateFromComponents:[calendar components:preservedComponents fromDate:self.datePicker.date]];
     
-    //Set up a timer that calls the updateTime method every second to update the label
-    NSTimer *timer;
-    timer = [NSTimer scheduledTimerWithTimeInterval:1.0
-                                             target:self
-                                           selector:@selector(updateTime)
-                                           userInfo:nil
-                                            repeats:YES];
+    //timer that calls the updateTime method every second to update the label
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1.0
+                                                      target:self
+                                                    selector:@selector(updateTime)
+                                                    userInfo:nil
+                                                    repeats:YES];
 }
 
+// method to update label with current time status
 -(void)updateTime
 {
-    //Get the time left until the specified date
-    NSInteger ti = ((NSInteger)[self.datePicker.date timeIntervalSinceNow]);
+    //Geting the time left until the specified date
+    NSInteger ti = ((NSInteger)[self.datePicker.date timeIntervalSinceNow]);//get staus of countdown
+    // setting the days, hrs, sec, and min
     NSInteger seconds = ti % 60;
     NSInteger minutes = (ti / 60) % 60;
     NSInteger hours = (ti / 3600) % 24;
     NSInteger days = (ti / 86400);
     
-    //Update the label with the remaining time
-//    self.countdownLabel.text = [NSString stringWithFormat:@"%02i days %02i hrs %02i min %02i sec", days, hours, minutes, seconds];
     
+    //update label to display remaing time until chosen date
+    // added extra spacing bewteen values
     self.countdownLabel.text = [NSString stringWithFormat:@"%02i  %02i  %02i  %02i ", days, hours, minutes, seconds];
 
     
@@ -62,22 +65,5 @@
 }
 
 
-
-
-
-
-
-
-
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

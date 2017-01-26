@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E33E0FB51E39C3BF00740FCA /* CountdownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E33E0FB41E39C3BF00740FCA /* CountdownViewController.m */; };
-		E33E0FB81E39C61C00740FCA /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E33E0FB71E39C61C00740FCA /* HomeViewController.m */; };
 		E34A3B5F1E3045A500842498 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E34A3B5E1E3045A500842498 /* main.m */; };
 		E34A3B621E3045A500842498 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E34A3B611E3045A500842498 /* AppDelegate.m */; };
 		E34A3B651E3045A500842498 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E34A3B641E3045A500842498 /* ViewController.m */; };
@@ -39,8 +38,6 @@
 /* Begin PBXFileReference section */
 		E33E0FB31E39C3BF00740FCA /* CountdownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountdownViewController.h; sourceTree = "<group>"; };
 		E33E0FB41E39C3BF00740FCA /* CountdownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountdownViewController.m; sourceTree = "<group>"; };
-		E33E0FB61E39C61C00740FCA /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
-		E33E0FB71E39C61C00740FCA /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		E34A3B5A1E3045A500842498 /* WP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E34A3B5E1E3045A500842498 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E34A3B601E3045A500842498 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -126,8 +123,6 @@
 			isa = PBXGroup;
 			children = (
 				E34A3B5E1E3045A500842498 /* main.m */,
-				E33E0FB61E39C61C00740FCA /* HomeViewController.h */,
-				E33E0FB71E39C61C00740FCA /* HomeViewController.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -286,7 +281,6 @@
 				E33E0FB51E39C3BF00740FCA /* CountdownViewController.m in Sources */,
 				E34A3B651E3045A500842498 /* ViewController.m in Sources */,
 				E34A3B621E3045A500842498 /* AppDelegate.m in Sources */,
-				E33E0FB81E39C61C00740FCA /* HomeViewController.m in Sources */,
 				E34A3B5F1E3045A500842498 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
