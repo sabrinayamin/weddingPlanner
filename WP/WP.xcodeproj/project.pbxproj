@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E33954121E41C70000B62927 /* Guest.m in Sources */ = {isa = PBXBuildFile; fileRef = E33954111E41C70000B62927 /* Guest.m */; };
+		E33954151E41C72800B62927 /* GuestListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E33954141E41C72800B62927 /* GuestListModel.m */; };
+		E339541B1E41CDC300B62927 /* GuestListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E339541A1E41CDC300B62927 /* GuestListTableViewController.m */; };
+		E339541E1E41CDEE00B62927 /* AddGuestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E339541D1E41CDEE00B62927 /* AddGuestViewController.m */; };
+		E33954211E41D6F700B62927 /* GuestTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E33954201E41D6F700B62927 /* GuestTableViewCell.m */; };
 		E33E0FB51E39C3BF00740FCA /* CountdownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E33E0FB41E39C3BF00740FCA /* CountdownViewController.m */; };
 		E34A3B5F1E3045A500842498 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E34A3B5E1E3045A500842498 /* main.m */; };
 		E34A3B621E3045A500842498 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E34A3B611E3045A500842498 /* AppDelegate.m */; };
@@ -36,6 +41,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E33954101E41C70000B62927 /* Guest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Guest.h; sourceTree = "<group>"; };
+		E33954111E41C70000B62927 /* Guest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Guest.m; sourceTree = "<group>"; };
+		E33954131E41C72800B62927 /* GuestListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuestListModel.h; sourceTree = "<group>"; };
+		E33954141E41C72800B62927 /* GuestListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuestListModel.m; sourceTree = "<group>"; };
+		E33954191E41CDC300B62927 /* GuestListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuestListTableViewController.h; sourceTree = "<group>"; };
+		E339541A1E41CDC300B62927 /* GuestListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuestListTableViewController.m; sourceTree = "<group>"; };
+		E339541C1E41CDEE00B62927 /* AddGuestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddGuestViewController.h; sourceTree = "<group>"; };
+		E339541D1E41CDEE00B62927 /* AddGuestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddGuestViewController.m; sourceTree = "<group>"; };
+		E339541F1E41D6F700B62927 /* GuestTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuestTableViewCell.h; sourceTree = "<group>"; };
+		E33954201E41D6F700B62927 /* GuestTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuestTableViewCell.m; sourceTree = "<group>"; };
 		E33E0FB31E39C3BF00740FCA /* CountdownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountdownViewController.h; sourceTree = "<group>"; };
 		E33E0FB41E39C3BF00740FCA /* CountdownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountdownViewController.m; sourceTree = "<group>"; };
 		E34A3B5A1E3045A500842498 /* WP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WP.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +96,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E33954161E41C74300B62927 /* Guest List */ = {
+			isa = PBXGroup;
+			children = (
+				E33954101E41C70000B62927 /* Guest.h */,
+				E33954111E41C70000B62927 /* Guest.m */,
+				E33954131E41C72800B62927 /* GuestListModel.h */,
+				E33954141E41C72800B62927 /* GuestListModel.m */,
+				E33954191E41CDC300B62927 /* GuestListTableViewController.h */,
+				E339541A1E41CDC300B62927 /* GuestListTableViewController.m */,
+				E339541C1E41CDEE00B62927 /* AddGuestViewController.h */,
+				E339541D1E41CDEE00B62927 /* AddGuestViewController.m */,
+				E339541F1E41D6F700B62927 /* GuestTableViewCell.h */,
+				E33954201E41D6F700B62927 /* GuestTableViewCell.m */,
+			);
+			name = "Guest List";
+			sourceTree = "<group>";
+		};
+		E33954181E41C76E00B62927 /* Countdown */ = {
+			isa = PBXGroup;
+			children = (
+				E33E0FB31E39C3BF00740FCA /* CountdownViewController.h */,
+				E33E0FB41E39C3BF00740FCA /* CountdownViewController.m */,
+			);
+			name = Countdown;
+			sourceTree = "<group>";
+		};
 		E34A3B511E3045A400842498 = {
 			isa = PBXGroup;
 			children = (
@@ -113,8 +154,6 @@
 				E34A3B6B1E3045A500842498 /* LaunchScreen.storyboard */,
 				E34A3B6E1E3045A500842498 /* Info.plist */,
 				E34A3B5D1E3045A500842498 /* Supporting Files */,
-				E33E0FB31E39C3BF00740FCA /* CountdownViewController.h */,
-				E33E0FB41E39C3BF00740FCA /* CountdownViewController.m */,
 			);
 			path = WP;
 			sourceTree = "<group>";
@@ -123,6 +162,8 @@
 			isa = PBXGroup;
 			children = (
 				E34A3B5E1E3045A500842498 /* main.m */,
+				E33954181E41C76E00B62927 /* Countdown */,
+				E33954161E41C74300B62927 /* Guest List */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -278,9 +319,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E33954151E41C72800B62927 /* GuestListModel.m in Sources */,
 				E33E0FB51E39C3BF00740FCA /* CountdownViewController.m in Sources */,
+				E33954121E41C70000B62927 /* Guest.m in Sources */,
+				E339541E1E41CDEE00B62927 /* AddGuestViewController.m in Sources */,
 				E34A3B651E3045A500842498 /* ViewController.m in Sources */,
 				E34A3B621E3045A500842498 /* AppDelegate.m in Sources */,
+				E339541B1E41CDC300B62927 /* GuestListTableViewController.m in Sources */,
+				E33954211E41D6F700B62927 /* GuestTableViewCell.m in Sources */,
 				E34A3B5F1E3045A500842498 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
