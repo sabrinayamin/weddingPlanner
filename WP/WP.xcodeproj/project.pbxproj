@@ -21,6 +21,8 @@
 		E34A3B6D1E3045A500842498 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E34A3B6B1E3045A500842498 /* LaunchScreen.storyboard */; };
 		E34A3B781E3045A500842498 /* WPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E34A3B771E3045A500842498 /* WPTests.m */; };
 		E34A3B831E3045A500842498 /* WPUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E34A3B821E3045A500842498 /* WPUITests.m */; };
+		E3A4BC571E4C63B000D5739B /* SectionsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A4BC561E4C63B000D5739B /* SectionsTableViewCell.m */; };
+		E3A4BC5A1E4C644A00D5739B /* SectionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A4BC591E4C644A00D5739B /* SectionsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,10 @@
 		E34A3B7E1E3045A500842498 /* WPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E34A3B821E3045A500842498 /* WPUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPUITests.m; sourceTree = "<group>"; };
 		E34A3B841E3045A500842498 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3A4BC551E4C63B000D5739B /* SectionsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionsTableViewCell.h; sourceTree = "<group>"; };
+		E3A4BC561E4C63B000D5739B /* SectionsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionsTableViewCell.m; sourceTree = "<group>"; };
+		E3A4BC581E4C644A00D5739B /* SectionsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionsTableViewController.h; sourceTree = "<group>"; };
+		E3A4BC591E4C644A00D5739B /* SectionsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,7 @@
 				E339541D1E41CDEE00B62927 /* AddGuestViewController.m */,
 				E339541F1E41D6F700B62927 /* GuestTableViewCell.h */,
 				E33954201E41D6F700B62927 /* GuestTableViewCell.m */,
+				E3A4BC511E4C610800D5739B /* Checklist */,
 			);
 			name = "Guest List";
 			sourceTree = "<group>";
@@ -184,6 +191,17 @@
 				E34A3B841E3045A500842498 /* Info.plist */,
 			);
 			path = WPUITests;
+			sourceTree = "<group>";
+		};
+		E3A4BC511E4C610800D5739B /* Checklist */ = {
+			isa = PBXGroup;
+			children = (
+				E3A4BC581E4C644A00D5739B /* SectionsTableViewController.h */,
+				E3A4BC591E4C644A00D5739B /* SectionsTableViewController.m */,
+				E3A4BC551E4C63B000D5739B /* SectionsTableViewCell.h */,
+				E3A4BC561E4C63B000D5739B /* SectionsTableViewCell.m */,
+			);
+			name = Checklist;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,12 +340,14 @@
 				E33954151E41C72800B62927 /* GuestListModel.m in Sources */,
 				E33E0FB51E39C3BF00740FCA /* CountdownViewController.m in Sources */,
 				E33954121E41C70000B62927 /* Guest.m in Sources */,
+				E3A4BC5A1E4C644A00D5739B /* SectionsTableViewController.m in Sources */,
 				E339541E1E41CDEE00B62927 /* AddGuestViewController.m in Sources */,
 				E34A3B651E3045A500842498 /* ViewController.m in Sources */,
 				E34A3B621E3045A500842498 /* AppDelegate.m in Sources */,
 				E339541B1E41CDC300B62927 /* GuestListTableViewController.m in Sources */,
 				E33954211E41D6F700B62927 /* GuestTableViewCell.m in Sources */,
 				E34A3B5F1E3045A500842498 /* main.m in Sources */,
+				E3A4BC571E4C63B000D5739B /* SectionsTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
