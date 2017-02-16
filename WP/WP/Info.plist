@@ -34,5 +34,14 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    
+    
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>urlscheme1</string>
+        <string>urlscheme2</string>
+        
+    </array>
+    
 </dict>
 </plist>

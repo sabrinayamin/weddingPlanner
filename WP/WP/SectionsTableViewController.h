@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SectionsTableViewController : UITableViewController
+@interface SectionsTableViewController : UIViewController
 
 @end

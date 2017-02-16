@@ -11,6 +11,8 @@
 @interface SectionsTableViewCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *itemLabel;
+@property (weak, nonatomic) IBOutlet UIButton *checkButton;
+- (IBAction)checkButtonAction:(id)sender;
 
 
 @end

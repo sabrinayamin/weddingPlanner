@@ -16,11 +16,12 @@
 		E34A3B5F1E3045A500842498 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E34A3B5E1E3045A500842498 /* main.m */; };
 		E34A3B621E3045A500842498 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E34A3B611E3045A500842498 /* AppDelegate.m */; };
 		E34A3B651E3045A500842498 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E34A3B641E3045A500842498 /* ViewController.m */; };
-		E34A3B681E3045A500842498 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E34A3B661E3045A500842498 /* Main.storyboard */; };
+		E34A3B681E3045A500842498 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E34A3B661E3045A500842498 /* Main.storyboard */; settings = {ASSET_TAGS = (2, ); }; };
 		E34A3B6A1E3045A500842498 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E34A3B691E3045A500842498 /* Assets.xcassets */; };
 		E34A3B6D1E3045A500842498 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E34A3B6B1E3045A500842498 /* LaunchScreen.storyboard */; };
 		E34A3B781E3045A500842498 /* WPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E34A3B771E3045A500842498 /* WPTests.m */; };
 		E34A3B831E3045A500842498 /* WPUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E34A3B821E3045A500842498 /* WPUITests.m */; };
+		E3635C811E5596BA00CD00CB /* InspoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3635C801E5596BA00CD00CB /* InspoViewController.m */; };
 		E3A4BC571E4C63B000D5739B /* SectionsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A4BC561E4C63B000D5739B /* SectionsTableViewCell.m */; };
 		E3A4BC5A1E4C644A00D5739B /* SectionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A4BC591E4C644A00D5739B /* SectionsTableViewController.m */; };
 /* End PBXBuildFile section */
@@ -71,6 +72,8 @@
 		E34A3B7E1E3045A500842498 /* WPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E34A3B821E3045A500842498 /* WPUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPUITests.m; sourceTree = "<group>"; };
 		E34A3B841E3045A500842498 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3635C7F1E5596BA00CD00CB /* InspoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InspoViewController.h; sourceTree = "<group>"; };
+		E3635C801E5596BA00CD00CB /* InspoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InspoViewController.m; sourceTree = "<group>"; };
 		E3A4BC551E4C63B000D5739B /* SectionsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionsTableViewCell.h; sourceTree = "<group>"; };
 		E3A4BC561E4C63B000D5739B /* SectionsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionsTableViewCell.m; sourceTree = "<group>"; };
 		E3A4BC581E4C644A00D5739B /* SectionsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionsTableViewController.h; sourceTree = "<group>"; };
@@ -115,7 +118,6 @@
 				E339541D1E41CDEE00B62927 /* AddGuestViewController.m */,
 				E339541F1E41D6F700B62927 /* GuestTableViewCell.h */,
 				E33954201E41D6F700B62927 /* GuestTableViewCell.m */,
-				E3A4BC511E4C610800D5739B /* Checklist */,
 			);
 			name = "Guest List";
 			sourceTree = "<group>";
@@ -169,6 +171,8 @@
 			isa = PBXGroup;
 			children = (
 				E34A3B5E1E3045A500842498 /* main.m */,
+				E3635C821E5596C500CD00CB /* Inspo */,
+				E3A4BC511E4C610800D5739B /* Checklist */,
 				E33954181E41C76E00B62927 /* Countdown */,
 				E33954161E41C74300B62927 /* Guest List */,
 			);
@@ -191,6 +195,15 @@
 				E34A3B841E3045A500842498 /* Info.plist */,
 			);
 			path = WPUITests;
+			sourceTree = "<group>";
+		};
+		E3635C821E5596C500CD00CB /* Inspo */ = {
+			isa = PBXGroup;
+			children = (
+				E3635C7F1E5596BA00CD00CB /* InspoViewController.h */,
+				E3635C801E5596BA00CD00CB /* InspoViewController.m */,
+			);
+			name = Inspo;
 			sourceTree = "<group>";
 		};
 		E3A4BC511E4C610800D5739B /* Checklist */ = {
@@ -266,6 +279,10 @@
 		E34A3B521E3045A400842498 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					2,
+					cakes,
+				);
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Sabrina Yamin";
 				TargetAttributes = {
@@ -341,6 +358,7 @@
 				E33E0FB51E39C3BF00740FCA /* CountdownViewController.m in Sources */,
 				E33954121E41C70000B62927 /* Guest.m in Sources */,
 				E3A4BC5A1E4C644A00D5739B /* SectionsTableViewController.m in Sources */,
+				E3635C811E5596BA00CD00CB /* InspoViewController.m in Sources */,
 				E339541E1E41CDEE00B62927 /* AddGuestViewController.m in Sources */,
 				E34A3B651E3045A500842498 /* ViewController.m in Sources */,
 				E34A3B621E3045A500842498 /* AppDelegate.m in Sources */,

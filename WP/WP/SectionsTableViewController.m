@@ -13,19 +13,14 @@
 
     NSDictionary *items;
     NSArray *itemSectionTitles;
+    SectionsTableViewCell *cell;
+
+
 }
 @end
 
 @implementation SectionsTableViewController
 
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
 
 - (void)viewDidLoad
 {
@@ -40,6 +35,10 @@
     
     itemSectionTitles = [[items allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
     
+    //make section title white
+    [[UILabel appearanceWhenContainedIn:[UITableViewHeaderFooterView class], nil] setTextColor:[UIColor whiteColor]];
+
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -47,14 +46,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-//- (NSString *)getImageFilename:(NSString *)animal
-//{
-//    NSString *imageFilename = [[animal lowercaseString] stringByReplacingOccurrencesOfString:@" " withString:@"_"];
-//    imageFilename = [imageFilename stringByAppendingString:@".jpg"];
-//
-//    return imageFilename;
-//}
 
 #pragma mark - Table view data source
 
@@ -81,17 +72,20 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    SectionsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    self->cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
     // Configure the cell...
     NSString *sectionTitle = [itemSectionTitles objectAtIndex:indexPath.section];
     NSArray *sectionItems = [items objectForKey:sectionTitle];
     NSString *item = [sectionItems objectAtIndex:indexPath.row];
     cell.itemLabel.text = item;
-    //    cell.imageView.image = [UIImage imageNamed:[self getImageFilename:animal]];
+    
     
     return cell;
 }
+
+
+
 
 
 @end
