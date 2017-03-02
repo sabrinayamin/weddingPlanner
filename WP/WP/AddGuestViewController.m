@@ -10,7 +10,7 @@
 
 @interface AddGuestViewController ()
 
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *cancelButton;
+//@property (weak, nonatomic) IBOutlet UIBarButtonItem *cancelButton;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *saveButton;
 @property (weak, nonatomic) IBOutlet UITextField *nameText;
 @property (weak, nonatomic) IBOutlet UITextField *notesText;
@@ -31,6 +31,8 @@
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [self.notesText becomeFirstResponder];
+   
+
 }
 
 
@@ -38,25 +40,32 @@
 
 - (IBAction)saveDidTapped:(UIBarButtonItem *)sender {
     
+    [self.navigationController popViewControllerAnimated:YES];
+
+    
     
     if (self.completionHandler){
         self.completionHandler(self.nameText.text, self.notesText.text);
     }
+    
+ 
 }
 
-- (IBAction)cancelDidTapped:(UIBarButtonItem *)sender {
-    
-    if (self.onCancelHandler){
-        self.onCancelHandler();
-    }
-}
+//- (IBAction)cancelDidTapped:(UIBarButtonItem *)sender {
+//    
+//    if (self.onCancelHandler){
+//        self.onCancelHandler();
+//    }
+//}
 
 
 // MARK: - UITextFieldDelegate methods
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    
     [self.nameText becomeFirstResponder];
     return YES;
+
 }
 
 
@@ -110,8 +119,10 @@
     if(touch.phase == UITouchPhaseBegan) {
         [self.nameText resignFirstResponder];
         [self.notesText resignFirstResponder];
+      
+
     }
-    
+
 }
 
 @end

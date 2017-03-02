@@ -8,13 +8,18 @@
 
 #import "SectionsTableViewController.h"
 #import "SectionsTableViewCell.h"
+#import "SharedProfileInfo.h"
 
 @interface SectionsTableViewController (){
 
     NSDictionary *items;
     NSArray *itemSectionTitles;
+    NSArray *listOfMonths;
     SectionsTableViewCell *cell;
-
+    
+   SharedProfileInfo *sharedProfile;
+    
+    NSDate* weddingDate;
 
 }
 @end
@@ -25,8 +30,24 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+    self->sharedProfile = [SharedProfileInfo sharedObject];
     
-    items = @{@"Month 1" : @[@"Item 1", @"Item 2", @"Item 3", @"Item 4"],
+    weddingDate= [self->sharedProfile theDate];
+    
+   
+    NSLog(@"%@",weddingDate);
+
+    int weddingMonth= [self->sharedProfile theMonth];
+//    NSLog(@"***the wedding month:");
+//    NSLog(@"%@",weddingMonth);
+    
+    if(weddingMonth == 10){
+        listOfMonths= @[@"First", @"Second", @"Third"];
+    }
+   
+    
+    items = @{listOfMonths[0] : @[@"Item 1", @"Item 2", @"Item 3", @"Item 4"],
                 @"Month 2" : @[@"Item 1", @"Item 2", @"Item 3", @"Item 4"],
                 @"Month 3" : @[@"Item 1", @"Item 2", @"Item 3", @"Item 4"],
                 @"Month 4" : @[@"Item 1", @"Item 2", @"Item 3", @"Item 4"],

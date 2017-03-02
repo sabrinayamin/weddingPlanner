@@ -7,9 +7,15 @@
 //
 
 #import "CountdownViewController.h"
+#import "SharedProfileInfo.h"
 
 
 @interface CountdownViewController ()
+ // SharedProfileInfo *sharedProfile;
+
+@property (nonatomic, strong)  SharedProfileInfo *sharedProfile;
+
+@property  NSDate* weddingDate;
 
 @end
 
@@ -18,8 +24,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+    self.sharedProfile = [SharedProfileInfo sharedObject];
+    
+    NSDate* testDate= [self.sharedProfile theDate ];
+    
+    //NSString *text = [NSString stringWithFormat:@"%@",  @(testDate)];
+    
+    NSLog(@"%@", testDate);
+    
     // make date picker color white
     [_datePicker setValue:[UIColor whiteColor] forKeyPath:@"textColor"];
+    
+     _weddingDate= self.datePicker.date;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -42,6 +59,21 @@
                                                     selector:@selector(updateTime)
                                                     userInfo:nil
                                                     repeats:YES];
+    
+    
+    //testing bs***********
+    
+    //NSString *text = [NSString stringWithFormat:@"%@",  @(self.datePicker.date)];
+    
+//    NSLog(@"look here");
+//    NSLog(@"%@", self.datePicker.date);
+//    
+//    NSDate *testdatee=self.datePicker.date;
+//    NSLog(@"%@", testdatee);
+
+    _weddingDate= self.datePicker.date;
+    NSLog(@"look here");
+    NSLog(@"%@", _weddingDate);
 }
 
 // method to update label with current time status
@@ -63,6 +95,8 @@
     
     
 }
+
+
 
 
 
