@@ -25,6 +25,7 @@
 		E3635C811E5596BA00CD00CB /* InspoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3635C801E5596BA00CD00CB /* InspoViewController.m */; };
 		E3A4BC571E4C63B000D5739B /* SectionsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A4BC561E4C63B000D5739B /* SectionsTableViewCell.m */; };
 		E3A4BC5A1E4C644A00D5739B /* SectionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A4BC591E4C644A00D5739B /* SectionsTableViewController.m */; };
+		E3DF76681E713B33006FC735 /* DressFinderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3DF76671E713B33006FC735 /* DressFinderViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,8 @@
 		E3A4BC561E4C63B000D5739B /* SectionsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionsTableViewCell.m; sourceTree = "<group>"; };
 		E3A4BC581E4C644A00D5739B /* SectionsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionsTableViewController.h; sourceTree = "<group>"; };
 		E3A4BC591E4C644A00D5739B /* SectionsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionsTableViewController.m; sourceTree = "<group>"; };
+		E3DF76661E713B33006FC735 /* DressFinderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DressFinderViewController.h; sourceTree = "<group>"; };
+		E3DF76671E713B33006FC735 /* DressFinderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DressFinderViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +176,7 @@
 		E34A3B5D1E3045A500842498 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E3DF76651E713B03006FC735 /* My Looks */,
 				E34A3B5E1E3045A500842498 /* main.m */,
 				E3635C821E5596C500CD00CB /* Inspo */,
 				E3A4BC511E4C610800D5739B /* Checklist */,
@@ -220,6 +224,15 @@
 				E3A4BC561E4C63B000D5739B /* SectionsTableViewCell.m */,
 			);
 			name = Checklist;
+			sourceTree = "<group>";
+		};
+		E3DF76651E713B03006FC735 /* My Looks */ = {
+			isa = PBXGroup;
+			children = (
+				E3DF76661E713B33006FC735 /* DressFinderViewController.h */,
+				E3DF76671E713B33006FC735 /* DressFinderViewController.m */,
+			);
+			name = "My Looks";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,6 +376,7 @@
 				E33E0FB51E39C3BF00740FCA /* CountdownViewController.m in Sources */,
 				E33954121E41C70000B62927 /* Guest.m in Sources */,
 				E3A4BC5A1E4C644A00D5739B /* SectionsTableViewController.m in Sources */,
+				E3DF76681E713B33006FC735 /* DressFinderViewController.m in Sources */,
 				E3635C811E5596BA00CD00CB /* InspoViewController.m in Sources */,
 				E339541E1E41CDEE00B62927 /* AddGuestViewController.m in Sources */,
 				E34A3B651E3045A500842498 /* ViewController.m in Sources */,

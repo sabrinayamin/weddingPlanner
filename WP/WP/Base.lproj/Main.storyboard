@@ -279,6 +279,9 @@
                                     <constraint firstAttribute="width" constant="51" id="J1S-C8-eyC"/>
                                     <constraint firstAttribute="height" constant="56" id="h7l-SR-8zs"/>
                                 </constraints>
+                                <connections>
+                                    <segue destination="xYX-S8-i2f" kind="push" id="OF3-cC-VHU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbf-ep-ony">
                                 <rect key="frame" x="170" y="458" width="51" height="56"/>
@@ -360,7 +363,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="62"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IFY-P8-irD" id="tCC-VT-fXB">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="61.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="61"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Guest Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xoS-1i-736">
@@ -471,6 +474,120 @@
             </objects>
             <point key="canvasLocation" x="4247" y="135"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="6bM-fy-1QB">
+            <objects>
+                <viewController id="xYX-S8-i2f" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lKd-Wj-9HL"/>
+                        <viewControllerLayoutGuide type="bottom" id="sQH-2Z-5G2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ylq-vJ-Vhc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stylePage" translatesAutoresizingMaskIntoConstraints="NO" id="TUT-mW-rBc">
+                                <rect key="frame" x="-4" y="20" width="383" height="647"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKG-7I-iHQ">
+                                <rect key="frame" x="0.0" y="90" width="375" height="173"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bK-bo-UUX">
+                                <rect key="frame" x="0.0" y="281" width="375" height="173"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r4Y-K1-G93">
+                                <rect key="frame" x="0.0" y="468" width="375" height="173"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="tWW-Nu-zXl" kind="push" id="6dB-n9-aY0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ivr-Hd-iyJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m5s-g2-tL8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3416.8000000000002" y="1665.5172413793105"/>
+        </scene>
+        <!--Dress Finder View Controller-->
+        <scene sceneID="39c-TE-0TQ">
+            <objects>
+                <viewController id="tWW-Nu-zXl" customClass="DressFinderViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kDl-EC-iMu"/>
+                        <viewControllerLayoutGuide type="bottom" id="q2s-bA-ON9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GKZ-yL-M2c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dressScreen-9" translatesAutoresizingMaskIntoConstraints="NO" id="Y8d-z1-q5x">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GNF-6e-UnV">
+                                <rect key="frame" x="0.0" y="98" width="124" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.34509803921568627" green="0.27450980392156865" blue="0.76470588235294112" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" backgroundImage="poofDressInactive"/>
+                                <connections>
+                                    <action selector="buttonAction:" destination="tWW-Nu-zXl" eventType="touchUpInside" id="ZyK-On-uMS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="myJ-Ey-cTx">
+                                <rect key="frame" x="129" y="98" width="124" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.34509803919999998" green="0.27450980390000002" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" backgroundImage="mermaidInactive"/>
+                                <connections>
+                                    <action selector="buttonAction:" destination="tWW-Nu-zXl" eventType="touchUpInside" id="ho6-rD-nlH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raB-cl-FkQ">
+                                <rect key="frame" x="257" y="98" width="119" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.34509803919999998" green="0.27450980390000002" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" backgroundImage="flowDressInactive"/>
+                                <connections>
+                                    <action selector="buttonAction:" destination="tWW-Nu-zXl" eventType="touchUpInside" id="LeK-cz-lDp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select a dress style shown above." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jV1-UU-1Nm">
+                                <rect key="frame" x="0.0" y="211" width="375" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0LP-I5-9BI">
+                                <rect key="frame" x="0.0" y="248" width="376" height="419"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="tWW-Nu-zXl" id="x2f-7u-5ek"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="03h-qs-aXQ"/>
+                    <connections>
+                        <outlet property="classicButton" destination="GNF-6e-UnV" id="ofF-mZ-ytq"/>
+                        <outlet property="dressTypeLabel" destination="jV1-UU-1Nm" id="9nh-zT-3u0"/>
+                        <outlet property="flowButton" destination="raB-cl-FkQ" id="l7R-Tw-pB1"/>
+                        <outlet property="mermaidButton" destination="myJ-Ey-cTx" id="XT9-n5-r7p"/>
+                        <outlet property="webView" destination="0LP-I5-9BI" id="bvm-cX-JOK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="piz-xx-SfW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4205.6000000000004" y="1665.5172413793105"/>
+        </scene>
         <!--Sections Table View Controller-->
         <scene sceneID="htj-7H-GnK">
             <objects>
@@ -493,10 +610,10 @@
                                 <color key="backgroundColor" white="1" alpha="0.23253984899328858" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="Cell" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="37" id="Yqm-eU-ih2" customClass="SectionsTableViewCell">
-                                        <rect key="frame" x="0.0" y="55.5" width="375" height="37"/>
+                                        <rect key="frame" x="0.0" y="56" width="375" height="37"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Yqm-eU-ih2" id="lGw-sw-ICz">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="36.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="36"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcG-Sp-nAu">
@@ -666,7 +783,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cPS-mQ-rXy" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Jx-dL-m6Y">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="5Jx-dL-m6Y">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.34509803919999998" green="0.27450980390000002" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -684,11 +801,16 @@
     <resources>
         <image name="addGuest" width="1562" height="2779"/>
         <image name="check" width="112" height="103"/>
+        <image name="dressScreen-9" width="1562" height="2787"/>
+        <image name="flowDressInactive" width="510" height="400"/>
         <image name="guest2" width="337" height="357"/>
         <image name="home" width="1562" height="2779"/>
         <image name="inspo" width="1562" height="2779"/>
         <image name="logIn" width="1562" height="2779"/>
         <image name="menuBakcground" width="1562" height="2779"/>
+        <image name="mermaidInactive" width="510" height="400"/>
+        <image name="poofDressInactive" width="510" height="400"/>
+        <image name="stylePage" width="1562" height="2787"/>
         <image name="weddingBackground" width="375" height="669"/>
     </resources>
 </document>

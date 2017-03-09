@@ -37,5 +37,17 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+    
+    
+    
+<!--    web view stuff-->
+
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key><true/>
+    </dict>
+    
+<!--    web view stuff-->
+    
 </dict>
 </plist>
