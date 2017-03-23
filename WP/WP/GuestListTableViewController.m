@@ -118,12 +118,16 @@
           
         }
         
-        [self dismissViewControllerAnimated:YES completion:nil];
+        [self.navigationController popViewControllerAnimated:YES];
+        
+        //[self dismissViewControllerAnimated:YES completion:nil];
         
     };
     
     agvc.onCancelHandler = ^{
-        [self dismissViewControllerAnimated:YES completion:nil];
+        [self.navigationController popViewControllerAnimated:YES];
+
+//        [self dismissViewControllerAnimated:YES completion:nil];
         
     };
     

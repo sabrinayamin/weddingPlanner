@@ -20,9 +20,9 @@
 + (SharedProfileInfo *) sharedObject
 {
     static dispatch_once_t once;
-    static SharedProfileInfo *sharedObject;
+    static SharedProfileInfo *sharedObject = nil;
     dispatch_once(&once, ^{
-        sharedObject = [[self alloc] init];
+        sharedObject = [[SharedProfileInfo alloc] init];
     });
     return sharedObject;
 }

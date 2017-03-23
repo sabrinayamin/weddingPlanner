@@ -12,16 +12,18 @@
 
 @interface SectionsTableViewController (){
 
+    // Instance variables
     NSDictionary *items;
     NSArray *itemSectionTitles;
     NSArray *listOfMonths;
     SectionsTableViewCell *cell;
     
-   SharedProfileInfo *sharedProfile;
-    
     NSDate* weddingDate;
 
 }
+
+@property (nonatomic, strong) SharedProfileInfo *sharedProfile;
+
 @end
 
 @implementation SectionsTableViewController
@@ -31,29 +33,53 @@
 {
     [super viewDidLoad];
 
-    self->sharedProfile = [SharedProfileInfo sharedObject];
+    self.sharedProfile = [SharedProfileInfo sharedObject];
     
-    weddingDate= [self->sharedProfile theDate];
+    weddingDate= [self.sharedProfile theDate];
     
    
     NSLog(@"%@",weddingDate);
 
-    int weddingMonth= [self->sharedProfile theMonth];
+    int weddingMonth= [self.sharedProfile theMonth];
 //    NSLog(@"***the wedding month:");
 //    NSLog(@"%@",weddingMonth);
     
-    if(weddingMonth == 10){
-        listOfMonths= @[@"First", @"Second", @"Third"];
-    }
-   
+    //if(weddingMonth == 10){
+        listOfMonths= @[@"Jannn", @"Febbbbbbbbb", @"March", @"aprl", @"May", @"june"];
+    //}
     
-    items = @{listOfMonths[0] : @[@"Item 1", @"Item 2", @"Item 3", @"Item 4"],
-                @"Month 2" : @[@"Item 1", @"Item 2", @"Item 3", @"Item 4"],
-                @"Month 3" : @[@"Item 1", @"Item 2", @"Item 3", @"Item 4"],
-                @"Month 4" : @[@"Item 1", @"Item 2", @"Item 3", @"Item 4"],
-                @"Month 5" : @[@"Item 1", @"Item 2", @"Item 3", @"Item 4"],
-                };
     
+//    listOfMonths = @[
+//                  
+//    ]
+//    
+//    items = @[
+//              
+//              @[@"Item 1", @"Item 2", @"Item 3"], // Jan
+//              @[@"Item 1", @"Item 2", @"Item 3"], // Feb
+//              @[@"Item 1", @"Item 2", @"Item 3"], //Mar
+//   ]
+    
+  
+    
+        items = @{listOfMonths[0] : @[@"1", @"Item 2", @"Item 3", @"Item 4"],
+                    listOfMonths[1] : @[@"2", @"Item 2", @"Item 3", @"Item 4"],
+                    listOfMonths[2] : @[@"3", @"Item 2", @"Item 3", @"Item 4"],
+                    listOfMonths[3] : @[@"4", @"Item 2", @"Item 3", @"Item 4"],
+                    listOfMonths[4] : @[@"5", @"Item 2", @"Item 3", @"Item 4"],
+                    listOfMonths[5] : @[@"6", @"Item 2", @"Item 3", @"Item 4"],
+                    };
+    
+     NSLog(@"hey");
+   NSLog(@"%@",items);
+    
+//    items = @{@"test" : @[@"Item 1", @"Item 2", @"Item 3", @"Item 4"],
+//                listOfMonths[0] : @[@"Item 1", @"Item 2", @"Item 3", @"Item 4"],
+//                @"test2" : @[@"Item 1", @"Item 2", @"Item 3", @"Item 4"],
+//                listOfMonths[2] : @[@"Item 1", @"Item 2", @"Item 3", @"Item 4"],
+//                listOfMonths[1] : @[@"Item 1", @"Item 2", @"Item 3", @"Item 4"],
+//                };
+//    
     itemSectionTitles = [[items allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
     
     //make section title white

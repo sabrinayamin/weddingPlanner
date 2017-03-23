@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <PinterestSDK/PDKClient.h>
 
 @interface AppDelegate ()
 

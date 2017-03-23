@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		59B4D5347CDD42397074114C /* libPods-WPTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A97354734A59C55252BEE9 /* libPods-WPTests.a */; };
+		7F8D27C8238EBC82494D579F /* libPods-WPUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74EE53991BE4799D79606270 /* libPods-WPUITests.a */; };
 		E33954121E41C70000B62927 /* Guest.m in Sources */ = {isa = PBXBuildFile; fileRef = E33954111E41C70000B62927 /* Guest.m */; };
 		E33954151E41C72800B62927 /* GuestListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E33954141E41C72800B62927 /* GuestListModel.m */; };
 		E339541B1E41CDC300B62927 /* GuestListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E339541A1E41CDC300B62927 /* GuestListTableViewController.m */; };
@@ -25,7 +27,11 @@
 		E3635C811E5596BA00CD00CB /* InspoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3635C801E5596BA00CD00CB /* InspoViewController.m */; };
 		E3A4BC571E4C63B000D5739B /* SectionsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A4BC561E4C63B000D5739B /* SectionsTableViewCell.m */; };
 		E3A4BC5A1E4C644A00D5739B /* SectionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A4BC591E4C644A00D5739B /* SectionsTableViewController.m */; };
+		E3CA43361E80B0340029D28C /* Month.m in Sources */ = {isa = PBXBuildFile; fileRef = E3CA43351E80B0340029D28C /* Month.m */; };
 		E3DF76681E713B33006FC735 /* DressFinderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3DF76671E713B33006FC735 /* DressFinderViewController.m */; };
+		E3E000241E83B67400D85EDB /* HairFinderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E000231E83B67400D85EDB /* HairFinderViewController.m */; };
+		E3E000271E83BC5000D85EDB /* makeupFinderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E000261E83BC5000D85EDB /* makeupFinderViewController.m */; };
+		E93EC80043D769973B68E6F2 /* libPods-WP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F637F21C12A8F9F05A319E4E /* libPods-WP.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +52,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04A97354734A59C55252BEE9 /* libPods-WPTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WPTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CED85A31EB8395E688A37C4 /* Pods-WP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WP/Pods-WP.debug.xcconfig"; sourceTree = "<group>"; };
+		51902308F582298A59B54FBC /* Pods-WPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WPTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WPTests/Pods-WPTests.debug.xcconfig"; sourceTree = "<group>"; };
+		53E649736B15E74C3FFCCD8D /* Pods-WPUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WPUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WPUITests/Pods-WPUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		74EE53991BE4799D79606270 /* libPods-WPUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WPUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0BBCD6E8D605AD836E76B56 /* Pods-WPUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WPUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WPUITests/Pods-WPUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DB6EA8B79909866560B048EB /* Pods-WP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WP.release.xcconfig"; path = "Pods/Target Support Files/Pods-WP/Pods-WP.release.xcconfig"; sourceTree = "<group>"; };
+		DF5267C037F8365979B5EBA5 /* Pods-WPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WPTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WPTests/Pods-WPTests.release.xcconfig"; sourceTree = "<group>"; };
 		E33954101E41C70000B62927 /* Guest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Guest.h; sourceTree = "<group>"; };
 		E33954111E41C70000B62927 /* Guest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Guest.m; sourceTree = "<group>"; };
 		E33954131E41C72800B62927 /* GuestListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuestListModel.h; sourceTree = "<group>"; };
@@ -82,8 +96,15 @@
 		E3A4BC561E4C63B000D5739B /* SectionsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionsTableViewCell.m; sourceTree = "<group>"; };
 		E3A4BC581E4C644A00D5739B /* SectionsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionsTableViewController.h; sourceTree = "<group>"; };
 		E3A4BC591E4C644A00D5739B /* SectionsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionsTableViewController.m; sourceTree = "<group>"; };
+		E3CA43341E80B0340029D28C /* Month.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Month.h; sourceTree = "<group>"; };
+		E3CA43351E80B0340029D28C /* Month.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Month.m; sourceTree = "<group>"; };
 		E3DF76661E713B33006FC735 /* DressFinderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DressFinderViewController.h; sourceTree = "<group>"; };
 		E3DF76671E713B33006FC735 /* DressFinderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DressFinderViewController.m; sourceTree = "<group>"; };
+		E3E000221E83B67400D85EDB /* HairFinderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HairFinderViewController.h; sourceTree = "<group>"; };
+		E3E000231E83B67400D85EDB /* HairFinderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HairFinderViewController.m; sourceTree = "<group>"; };
+		E3E000251E83BC5000D85EDB /* makeupFinderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = makeupFinderViewController.h; sourceTree = "<group>"; };
+		E3E000261E83BC5000D85EDB /* makeupFinderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = makeupFinderViewController.m; sourceTree = "<group>"; };
+		F637F21C12A8F9F05A319E4E /* libPods-WP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E93EC80043D769973B68E6F2 /* libPods-WP.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59B4D5347CDD42397074114C /* libPods-WPTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,12 +128,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F8D27C8238EBC82494D579F /* libPods-WPUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		88EDBAAAEFFBF514326FCE47 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F637F21C12A8F9F05A319E4E /* libPods-WP.a */,
+				04A97354734A59C55252BEE9 /* libPods-WPTests.a */,
+				74EE53991BE4799D79606270 /* libPods-WPUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A104DD1569200F7FEF2BAD7E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4CED85A31EB8395E688A37C4 /* Pods-WP.debug.xcconfig */,
+				DB6EA8B79909866560B048EB /* Pods-WP.release.xcconfig */,
+				51902308F582298A59B54FBC /* Pods-WPTests.debug.xcconfig */,
+				DF5267C037F8365979B5EBA5 /* Pods-WPTests.release.xcconfig */,
+				53E649736B15E74C3FFCCD8D /* Pods-WPUITests.debug.xcconfig */,
+				C0BBCD6E8D605AD836E76B56 /* Pods-WPUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E33954161E41C74300B62927 /* Guest List */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +191,8 @@
 				E34A3B761E3045A500842498 /* WPTests */,
 				E34A3B811E3045A500842498 /* WPUITests */,
 				E34A3B5B1E3045A500842498 /* Products */,
+				A104DD1569200F7FEF2BAD7E /* Pods */,
+				88EDBAAAEFFBF514326FCE47 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -220,6 +269,8 @@
 			children = (
 				E3A4BC581E4C644A00D5739B /* SectionsTableViewController.h */,
 				E3A4BC591E4C644A00D5739B /* SectionsTableViewController.m */,
+				E3CA43341E80B0340029D28C /* Month.h */,
+				E3CA43351E80B0340029D28C /* Month.m */,
 				E3A4BC551E4C63B000D5739B /* SectionsTableViewCell.h */,
 				E3A4BC561E4C63B000D5739B /* SectionsTableViewCell.m */,
 			);
@@ -231,6 +282,10 @@
 			children = (
 				E3DF76661E713B33006FC735 /* DressFinderViewController.h */,
 				E3DF76671E713B33006FC735 /* DressFinderViewController.m */,
+				E3E000221E83B67400D85EDB /* HairFinderViewController.h */,
+				E3E000231E83B67400D85EDB /* HairFinderViewController.m */,
+				E3E000251E83BC5000D85EDB /* makeupFinderViewController.h */,
+				E3E000261E83BC5000D85EDB /* makeupFinderViewController.m */,
 			);
 			name = "My Looks";
 			sourceTree = "<group>";
@@ -242,9 +297,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E34A3B871E3045A500842498 /* Build configuration list for PBXNativeTarget "WP" */;
 			buildPhases = (
+				F699D3C943D02ADC3F762D24 /* [CP] Check Pods Manifest.lock */,
 				E34A3B561E3045A500842498 /* Sources */,
 				E34A3B571E3045A500842498 /* Frameworks */,
 				E34A3B581E3045A500842498 /* Resources */,
+				59D9B1F534E1AB14316627F5 /* [CP] Embed Pods Frameworks */,
+				5F05D2F3BD1C4FDCF6245764 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,9 +317,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E34A3B8A1E3045A500842498 /* Build configuration list for PBXNativeTarget "WPTests" */;
 			buildPhases = (
+				C5AB60398BCC133B65D3EA6F /* [CP] Check Pods Manifest.lock */,
 				E34A3B6F1E3045A500842498 /* Sources */,
 				E34A3B701E3045A500842498 /* Frameworks */,
 				E34A3B711E3045A500842498 /* Resources */,
+				7C03DD6D2378CA66E9634CDD /* [CP] Embed Pods Frameworks */,
+				0DF5489E682CEC9862076C77 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -277,9 +338,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E34A3B8D1E3045A500842498 /* Build configuration list for PBXNativeTarget "WPUITests" */;
 			buildPhases = (
+				A0F4840C4909FAFDABFC506C /* [CP] Check Pods Manifest.lock */,
 				E34A3B7A1E3045A500842498 /* Sources */,
 				E34A3B7B1E3045A500842498 /* Frameworks */,
 				E34A3B7C1E3045A500842498 /* Resources */,
+				B0561CE235D7F168DE83DDDB /* [CP] Embed Pods Frameworks */,
+				B0AB5F99B65F1E694A8109F0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -367,17 +431,158 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0DF5489E682CEC9862076C77 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WPTests/Pods-WPTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59D9B1F534E1AB14316627F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WP/Pods-WP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F05D2F3BD1C4FDCF6245764 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WP/Pods-WP-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C03DD6D2378CA66E9634CDD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WPTests/Pods-WPTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0F4840C4909FAFDABFC506C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B0561CE235D7F168DE83DDDB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WPUITests/Pods-WPUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0AB5F99B65F1E694A8109F0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WPUITests/Pods-WPUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5AB60398BCC133B65D3EA6F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F699D3C943D02ADC3F762D24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E34A3B561E3045A500842498 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3E000241E83B67400D85EDB /* HairFinderViewController.m in Sources */,
+				E3CA43361E80B0340029D28C /* Month.m in Sources */,
 				E33954151E41C72800B62927 /* GuestListModel.m in Sources */,
 				E33E0FB51E39C3BF00740FCA /* CountdownViewController.m in Sources */,
 				E33954121E41C70000B62927 /* Guest.m in Sources */,
 				E3A4BC5A1E4C644A00D5739B /* SectionsTableViewController.m in Sources */,
 				E3DF76681E713B33006FC735 /* DressFinderViewController.m in Sources */,
 				E3635C811E5596BA00CD00CB /* InspoViewController.m in Sources */,
+				E3E000271E83BC5000D85EDB /* makeupFinderViewController.m in Sources */,
 				E339541E1E41CDEE00B62927 /* AddGuestViewController.m in Sources */,
 				E34A3B651E3045A500842498 /* ViewController.m in Sources */,
 				E35B05E51E67F541006FAB25 /* SharedProfileInfo.m in Sources */,
@@ -530,6 +735,7 @@
 		};
 		E34A3B881E3045A500842498 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CED85A31EB8395E688A37C4 /* Pods-WP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WP/Info.plist;
@@ -541,6 +747,7 @@
 		};
 		E34A3B891E3045A500842498 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB6EA8B79909866560B048EB /* Pods-WP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WP/Info.plist;
@@ -552,6 +759,7 @@
 		};
 		E34A3B8B1E3045A500842498 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51902308F582298A59B54FBC /* Pods-WPTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = WPTests/Info.plist;
@@ -564,6 +772,7 @@
 		};
 		E34A3B8C1E3045A500842498 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF5267C037F8365979B5EBA5 /* Pods-WPTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = WPTests/Info.plist;
@@ -576,6 +785,7 @@
 		};
 		E34A3B8E1E3045A500842498 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53E649736B15E74C3FFCCD8D /* Pods-WPUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = WPUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -587,6 +797,7 @@
 		};
 		E34A3B8F1E3045A500842498 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0BBCD6E8D605AD836E76B56 /* Pods-WPUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = WPUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
