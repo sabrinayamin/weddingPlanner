@@ -11,10 +11,11 @@
 #import "PDKClient.h"
 #import "PDKImageInfo.h"
 #import "PDKPin.h"
+#import <PinterestSDK/PinterestSDK.h>
 
 @interface TestCollectionViewController()
 
-
+@property (nonatomic, strong) NSArray *pins;
 
 @end
 
@@ -24,7 +25,44 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
+    // Show the pinterest modal
+    [[PDKClient sharedInstance] authenticateWithPermissions:@[PDKClientReadPublicPermissions] withSuccess:^(PDKResponseObject *responseObject) {
+        
+        // Pinterest User
+        NSLog(@"response %@", responseObject);
+        
+            [[PDKClient sharedInstance] getBoardPins:@"64598644594251556" fields: [[NSSet alloc] initWithObjects:@"id", @"image", @"note", nil] withSuccess:^(PDKResponseObject *responseObject) {
+        
+                // Pins that belongs to boards
+                NSLog(@"response %@", responseObject);
+                
+                /*
+                 [
+                     {
+                        "image": "http://www.pinteret.com/puppy.png"
+                        "id": "23ot23tioj23tio3",
+                        "title": "Wedding"
+                     },
+                 
+                    .....
+                 
+                 ]
+                 */
+                
+                // [collectionView reloadData]
+        
+            } andFailure:^(NSError *error) {
+        
+                NSLog(@"error %@", error);
+            }];
+        
+        
+    } andFailure:^(NSError *error) {
+        NSLog(@"error %@", error);
+    }];
+    //
+//
     // Uncomment the following line to preserve selection between presentations
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -35,7 +73,7 @@
 //    recipeImages = [NSArray arrayWithObjects:@"mermaidActive.png", @"poofDressActive.png", @"flowDressActive.png", nil];
     
     _myImages = [@[@"mermaidActive.png",
-                    @"poofDressActive.png.jpg",
+                    @"poofDressActive.png",
                     @"flowDressActive.png"] mutableCopy];
 }
 
@@ -65,21 +103,24 @@
                                     forIndexPath:indexPath];
  
     //adding imgs
-//    UIImage *image;
-//    long row = [indexPath row];
-//    image = [UIImage imageNamed:_carImages[row]];
-//    
-//    myCell.imageView.image = image;
+    UIImage *image;
+    long row = [indexPath row];
+    image = [UIImage imageNamed:_myImages[row]];
+    
+    myCell.imageView.image = image;
 
     
     //adding web views
-     NSString *urlString;
-     urlString = @"https://www.pinterest.com/pin/Abx17mt_6_eXaVCOeBQd9IEmUcdPw3VfehpupePJaggLim4Bvut4omM/";
-    NSURL *url = [NSURL URLWithString:urlString];
-    NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
-    [myCell.webView loadRequest:urlRequest];
+//     NSString *urlString;
+//     urlString = @"https://www.pinterest.com/pin/Abx17mt_6_eXaVCOeBQd9IEmUcdPw3VfehpupePJaggLim4Bvut4omM/";
+//    NSURL *url = [NSURL URLWithString:urlString];
+//    NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
+//    [myCell.webView loadRequest:urlRequest];
     
 
+    //pdk image info??
+    //PDk board??
+    
     
     return myCell;
 }

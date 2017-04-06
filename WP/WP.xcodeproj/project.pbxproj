@@ -25,6 +25,10 @@
 		E34A3B831E3045A500842498 /* WPUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E34A3B821E3045A500842498 /* WPUITests.m */; };
 		E35B05E51E67F541006FAB25 /* SharedProfileInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E35B05E41E67F541006FAB25 /* SharedProfileInfo.m */; };
 		E3635C811E5596BA00CD00CB /* InspoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3635C801E5596BA00CD00CB /* InspoViewController.m */; };
+		E373D3F41E9607B500BD1462 /* PinCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E373D3F31E9607B500BD1462 /* PinCollectionViewCell.m */; };
+		E373D3FA1E9609DE00BD1462 /* PinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E373D3F91E9609DE00BD1462 /* PinViewController.m */; };
+		E39BE2381E961DA800C7E4E4 /* XYPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = E39BE2371E961DA800C7E4E4 /* XYPieChart.m */; };
+		E39BE23B1E961F0F00C7E4E4 /* ChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E39BE23A1E961F0F00C7E4E4 /* ChartViewController.m */; };
 		E3A4BC571E4C63B000D5739B /* SectionsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A4BC561E4C63B000D5739B /* SectionsTableViewCell.m */; };
 		E3A4BC5A1E4C644A00D5739B /* SectionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A4BC591E4C644A00D5739B /* SectionsTableViewController.m */; };
 		E3CA43361E80B0340029D28C /* Month.m in Sources */ = {isa = PBXBuildFile; fileRef = E3CA43351E80B0340029D28C /* Month.m */; };
@@ -95,12 +99,21 @@
 		E35B05E41E67F541006FAB25 /* SharedProfileInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedProfileInfo.m; sourceTree = "<group>"; };
 		E3635C7F1E5596BA00CD00CB /* InspoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InspoViewController.h; sourceTree = "<group>"; };
 		E3635C801E5596BA00CD00CB /* InspoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InspoViewController.m; sourceTree = "<group>"; };
+		E373D3F21E9607B500BD1462 /* PinCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinCollectionViewCell.h; sourceTree = "<group>"; };
+		E373D3F31E9607B500BD1462 /* PinCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinCollectionViewCell.m; sourceTree = "<group>"; };
+		E373D3F81E9609DE00BD1462 /* PinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinViewController.h; sourceTree = "<group>"; };
+		E373D3F91E9609DE00BD1462 /* PinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinViewController.m; sourceTree = "<group>"; };
+		E39BE2361E961DA800C7E4E4 /* XYPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPieChart.h; sourceTree = "<group>"; };
+		E39BE2371E961DA800C7E4E4 /* XYPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPieChart.m; sourceTree = "<group>"; };
+		E39BE2391E961F0F00C7E4E4 /* ChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartViewController.h; sourceTree = "<group>"; };
+		E39BE23A1E961F0F00C7E4E4 /* ChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartViewController.m; sourceTree = "<group>"; };
 		E3A4BC551E4C63B000D5739B /* SectionsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionsTableViewCell.h; sourceTree = "<group>"; };
 		E3A4BC561E4C63B000D5739B /* SectionsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionsTableViewCell.m; sourceTree = "<group>"; };
 		E3A4BC581E4C644A00D5739B /* SectionsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionsTableViewController.h; sourceTree = "<group>"; };
 		E3A4BC591E4C644A00D5739B /* SectionsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionsTableViewController.m; sourceTree = "<group>"; };
 		E3CA43341E80B0340029D28C /* Month.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Month.h; sourceTree = "<group>"; };
 		E3CA43351E80B0340029D28C /* Month.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Month.m; sourceTree = "<group>"; };
+		E3D3E3AA1E8C86EC00BDF273 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		E3DF76661E713B33006FC735 /* DressFinderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DressFinderViewController.h; sourceTree = "<group>"; };
 		E3DF76671E713B33006FC735 /* DressFinderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DressFinderViewController.m; sourceTree = "<group>"; };
 		E3E000221E83B67400D85EDB /* HairFinderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HairFinderViewController.h; sourceTree = "<group>"; };
@@ -234,6 +247,10 @@
 		E34A3B5D1E3045A500842498 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E39BE2361E961DA800C7E4E4 /* XYPieChart.h */,
+				E39BE2371E961DA800C7E4E4 /* XYPieChart.m */,
+				E39BE2391E961F0F00C7E4E4 /* ChartViewController.h */,
+				E39BE23A1E961F0F00C7E4E4 /* ChartViewController.m */,
 				E3DF76651E713B03006FC735 /* My Looks */,
 				E34A3B5E1E3045A500842498 /* main.m */,
 				E3635C821E5596C500CD00CB /* Inspo */,
@@ -242,12 +259,8 @@
 				E33954161E41C74300B62927 /* Guest List */,
 				E35B05E31E67F541006FAB25 /* SharedProfileInfo.h */,
 				E35B05E41E67F541006FAB25 /* SharedProfileInfo.m */,
-				E3E552481E89FB8500ED20D7 /* CollectionTestViewController.h */,
-				E3E552491E89FB8500ED20D7 /* CollectionTestViewController.m */,
-				E3E5524B1E89FF5400ED20D7 /* TestCollectionViewController.h */,
-				E3E5524C1E89FF5400ED20D7 /* TestCollectionViewController.m */,
-				E3E5524E1E8A05CF00ED20D7 /* MyCollectionViewCell.h */,
-				E3E5524F1E8A05CF00ED20D7 /* MyCollectionViewCell.m */,
+				E373D3F11E96077800BD1462 /* New Group */,
+				E373D3F01E96061200BD1462 /* collection text files */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -277,6 +290,31 @@
 				E3635C801E5596BA00CD00CB /* InspoViewController.m */,
 			);
 			name = Inspo;
+			sourceTree = "<group>";
+		};
+		E373D3F01E96061200BD1462 /* collection text files */ = {
+			isa = PBXGroup;
+			children = (
+				E3D3E3AA1E8C86EC00BDF273 /* Constants.h */,
+				E3E552481E89FB8500ED20D7 /* CollectionTestViewController.h */,
+				E3E552491E89FB8500ED20D7 /* CollectionTestViewController.m */,
+				E3E5524B1E89FF5400ED20D7 /* TestCollectionViewController.h */,
+				E3E5524C1E89FF5400ED20D7 /* TestCollectionViewController.m */,
+				E3E5524E1E8A05CF00ED20D7 /* MyCollectionViewCell.h */,
+				E3E5524F1E8A05CF00ED20D7 /* MyCollectionViewCell.m */,
+			);
+			name = "collection text files";
+			sourceTree = "<group>";
+		};
+		E373D3F11E96077800BD1462 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				E373D3F21E9607B500BD1462 /* PinCollectionViewCell.h */,
+				E373D3F31E9607B500BD1462 /* PinCollectionViewCell.m */,
+				E373D3F81E9609DE00BD1462 /* PinViewController.h */,
+				E373D3F91E9609DE00BD1462 /* PinViewController.m */,
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 		E3A4BC511E4C610800D5739B /* Checklist */ = {
@@ -590,10 +628,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3E000241E83B67400D85EDB /* HairFinderViewController.m in Sources */,
+				E39BE23B1E961F0F00C7E4E4 /* ChartViewController.m in Sources */,
 				E3CA43361E80B0340029D28C /* Month.m in Sources */,
+				E373D3F41E9607B500BD1462 /* PinCollectionViewCell.m in Sources */,
 				E33954151E41C72800B62927 /* GuestListModel.m in Sources */,
 				E33E0FB51E39C3BF00740FCA /* CountdownViewController.m in Sources */,
 				E33954121E41C70000B62927 /* Guest.m in Sources */,
+				E373D3FA1E9609DE00BD1462 /* PinViewController.m in Sources */,
 				E3A4BC5A1E4C644A00D5739B /* SectionsTableViewController.m in Sources */,
 				E3DF76681E713B33006FC735 /* DressFinderViewController.m in Sources */,
 				E3635C811E5596BA00CD00CB /* InspoViewController.m in Sources */,
@@ -607,6 +648,7 @@
 				E339541B1E41CDC300B62927 /* GuestListTableViewController.m in Sources */,
 				E3E5524D1E89FF5400ED20D7 /* TestCollectionViewController.m in Sources */,
 				E33954211E41D6F700B62927 /* GuestTableViewCell.m in Sources */,
+				E39BE2381E961DA800C7E4E4 /* XYPieChart.m in Sources */,
 				E34A3B5F1E3045A500842498 /* main.m in Sources */,
 				E3A4BC571E4C63B000D5739B /* SectionsTableViewCell.m in Sources */,
 			);
