@@ -72,7 +72,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-## SSKeychain
+## SAMKeychain
 
 Copyright (c) 2010-2016 Sam Soffes, http://soff.es
 

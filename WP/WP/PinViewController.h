@@ -10,4 +10,6 @@
 
 @interface PinViewController : UIViewController
 
+@property (nonatomic, strong) NSString *boardIdent;
+
 @end

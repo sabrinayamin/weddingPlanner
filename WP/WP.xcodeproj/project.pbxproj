@@ -35,9 +35,6 @@
 		E3DF76681E713B33006FC735 /* DressFinderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3DF76671E713B33006FC735 /* DressFinderViewController.m */; };
 		E3E000241E83B67400D85EDB /* HairFinderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E000231E83B67400D85EDB /* HairFinderViewController.m */; };
 		E3E000271E83BC5000D85EDB /* makeupFinderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E000261E83BC5000D85EDB /* makeupFinderViewController.m */; };
-		E3E5524A1E89FB8500ED20D7 /* CollectionTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E552491E89FB8500ED20D7 /* CollectionTestViewController.m */; };
-		E3E5524D1E89FF5400ED20D7 /* TestCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E5524C1E89FF5400ED20D7 /* TestCollectionViewController.m */; };
-		E3E552501E8A05CF00ED20D7 /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E5524F1E8A05CF00ED20D7 /* MyCollectionViewCell.m */; };
 		E93EC80043D769973B68E6F2 /* libPods-WP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F637F21C12A8F9F05A319E4E /* libPods-WP.a */; };
 /* End PBXBuildFile section */
 
@@ -113,19 +110,12 @@
 		E3A4BC591E4C644A00D5739B /* SectionsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionsTableViewController.m; sourceTree = "<group>"; };
 		E3CA43341E80B0340029D28C /* Month.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Month.h; sourceTree = "<group>"; };
 		E3CA43351E80B0340029D28C /* Month.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Month.m; sourceTree = "<group>"; };
-		E3D3E3AA1E8C86EC00BDF273 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		E3DF76661E713B33006FC735 /* DressFinderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DressFinderViewController.h; sourceTree = "<group>"; };
 		E3DF76671E713B33006FC735 /* DressFinderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DressFinderViewController.m; sourceTree = "<group>"; };
 		E3E000221E83B67400D85EDB /* HairFinderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HairFinderViewController.h; sourceTree = "<group>"; };
 		E3E000231E83B67400D85EDB /* HairFinderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HairFinderViewController.m; sourceTree = "<group>"; };
 		E3E000251E83BC5000D85EDB /* makeupFinderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = makeupFinderViewController.h; sourceTree = "<group>"; };
 		E3E000261E83BC5000D85EDB /* makeupFinderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = makeupFinderViewController.m; sourceTree = "<group>"; };
-		E3E552481E89FB8500ED20D7 /* CollectionTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionTestViewController.h; sourceTree = "<group>"; };
-		E3E552491E89FB8500ED20D7 /* CollectionTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionTestViewController.m; sourceTree = "<group>"; };
-		E3E5524B1E89FF5400ED20D7 /* TestCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCollectionViewController.h; sourceTree = "<group>"; };
-		E3E5524C1E89FF5400ED20D7 /* TestCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCollectionViewController.m; sourceTree = "<group>"; };
-		E3E5524E1E8A05CF00ED20D7 /* MyCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewCell.h; sourceTree = "<group>"; };
-		E3E5524F1E8A05CF00ED20D7 /* MyCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewCell.m; sourceTree = "<group>"; };
 		F637F21C12A8F9F05A319E4E /* libPods-WP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -247,10 +237,7 @@
 		E34A3B5D1E3045A500842498 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E39BE2361E961DA800C7E4E4 /* XYPieChart.h */,
-				E39BE2371E961DA800C7E4E4 /* XYPieChart.m */,
-				E39BE2391E961F0F00C7E4E4 /* ChartViewController.h */,
-				E39BE23A1E961F0F00C7E4E4 /* ChartViewController.m */,
+				E3DCD1EB1E9F537E00CA2A2C /* pie chart */,
 				E3DF76651E713B03006FC735 /* My Looks */,
 				E34A3B5E1E3045A500842498 /* main.m */,
 				E3635C821E5596C500CD00CB /* Inspo */,
@@ -259,8 +246,7 @@
 				E33954161E41C74300B62927 /* Guest List */,
 				E35B05E31E67F541006FAB25 /* SharedProfileInfo.h */,
 				E35B05E41E67F541006FAB25 /* SharedProfileInfo.m */,
-				E373D3F11E96077800BD1462 /* New Group */,
-				E373D3F01E96061200BD1462 /* collection text files */,
+				E373D3F11E96077800BD1462 /* Pintrest View */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -292,21 +278,7 @@
 			name = Inspo;
 			sourceTree = "<group>";
 		};
-		E373D3F01E96061200BD1462 /* collection text files */ = {
-			isa = PBXGroup;
-			children = (
-				E3D3E3AA1E8C86EC00BDF273 /* Constants.h */,
-				E3E552481E89FB8500ED20D7 /* CollectionTestViewController.h */,
-				E3E552491E89FB8500ED20D7 /* CollectionTestViewController.m */,
-				E3E5524B1E89FF5400ED20D7 /* TestCollectionViewController.h */,
-				E3E5524C1E89FF5400ED20D7 /* TestCollectionViewController.m */,
-				E3E5524E1E8A05CF00ED20D7 /* MyCollectionViewCell.h */,
-				E3E5524F1E8A05CF00ED20D7 /* MyCollectionViewCell.m */,
-			);
-			name = "collection text files";
-			sourceTree = "<group>";
-		};
-		E373D3F11E96077800BD1462 /* New Group */ = {
+		E373D3F11E96077800BD1462 /* Pintrest View */ = {
 			isa = PBXGroup;
 			children = (
 				E373D3F21E9607B500BD1462 /* PinCollectionViewCell.h */,
@@ -314,7 +286,7 @@
 				E373D3F81E9609DE00BD1462 /* PinViewController.h */,
 				E373D3F91E9609DE00BD1462 /* PinViewController.m */,
 			);
-			name = "New Group";
+			name = "Pintrest View";
 			sourceTree = "<group>";
 		};
 		E3A4BC511E4C610800D5739B /* Checklist */ = {
@@ -328,6 +300,17 @@
 				E3A4BC561E4C63B000D5739B /* SectionsTableViewCell.m */,
 			);
 			name = Checklist;
+			sourceTree = "<group>";
+		};
+		E3DCD1EB1E9F537E00CA2A2C /* pie chart */ = {
+			isa = PBXGroup;
+			children = (
+				E39BE2391E961F0F00C7E4E4 /* ChartViewController.h */,
+				E39BE23A1E961F0F00C7E4E4 /* ChartViewController.m */,
+				E39BE2361E961DA800C7E4E4 /* XYPieChart.h */,
+				E39BE2371E961DA800C7E4E4 /* XYPieChart.m */,
+			);
+			name = "pie chart";
 			sourceTree = "<group>";
 		};
 		E3DF76651E713B03006FC735 /* My Looks */ = {
@@ -423,15 +406,18 @@
 				TargetAttributes = {
 					E34A3B591E3045A500842498 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 8E5TAX2WK4;
 						ProvisioningStyle = Automatic;
 					};
 					E34A3B721E3045A500842498 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 8E5TAX2WK4;
 						ProvisioningStyle = Automatic;
 						TestTargetID = E34A3B591E3045A500842498;
 					};
 					E34A3B7D1E3045A500842498 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 8E5TAX2WK4;
 						ProvisioningStyle = Automatic;
 						TestTargetID = E34A3B591E3045A500842498;
 					};
@@ -638,15 +624,12 @@
 				E3A4BC5A1E4C644A00D5739B /* SectionsTableViewController.m in Sources */,
 				E3DF76681E713B33006FC735 /* DressFinderViewController.m in Sources */,
 				E3635C811E5596BA00CD00CB /* InspoViewController.m in Sources */,
-				E3E5524A1E89FB8500ED20D7 /* CollectionTestViewController.m in Sources */,
 				E3E000271E83BC5000D85EDB /* makeupFinderViewController.m in Sources */,
 				E339541E1E41CDEE00B62927 /* AddGuestViewController.m in Sources */,
 				E34A3B651E3045A500842498 /* ViewController.m in Sources */,
 				E35B05E51E67F541006FAB25 /* SharedProfileInfo.m in Sources */,
 				E34A3B621E3045A500842498 /* AppDelegate.m in Sources */,
-				E3E552501E8A05CF00ED20D7 /* MyCollectionViewCell.m in Sources */,
 				E339541B1E41CDC300B62927 /* GuestListTableViewController.m in Sources */,
-				E3E5524D1E89FF5400ED20D7 /* TestCollectionViewController.m in Sources */,
 				E33954211E41D6F700B62927 /* GuestTableViewCell.m in Sources */,
 				E39BE2381E961DA800C7E4E4 /* XYPieChart.m in Sources */,
 				E34A3B5F1E3045A500842498 /* main.m in Sources */,
@@ -729,6 +712,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 8E5TAX2WK4;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -776,6 +760,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 8E5TAX2WK4;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -799,6 +784,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sab.WP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -811,6 +797,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sab.WP;
 				PRODUCT_NAME = "$(TARGET_NAME)";

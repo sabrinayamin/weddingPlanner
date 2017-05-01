@@ -17,17 +17,17 @@
 #import "PDKImageInfo.h"
 #import "PinCollectionViewCell.h"
 
+#import "SharedProfileInfo.h"
 
 
-
-#define BOARD_ID @"91620242358275162"
+//#define BOARD_ID @"91620242358275162"
 
 
 
 @interface PinViewController () <UICollectionViewDataSource>
-
 // This will containe a list of PDKPin objects
 @property (nonatomic, strong) NSArray *pins;
+@property (nonatomic, strong) SharedProfileInfo *sharedInfo;
 
 //@property (nonatomic, strong) NSString *urlString;
 
@@ -38,35 +38,40 @@
 @implementation PinViewController
 
 
-//- (IBAction)authenticateDidPressed:(UIButton *)sender {
-//    
-//    // 1) Shows diaglouge to authenticate user with Pinterest for the first time, we are only requesting read permission with the constante
-//    [[PDKClient sharedInstance] authenticateWithPermissions:@[PDKClientReadPublicPermissions]
-//                                         fromViewController:self
-//                                                withSuccess:^(PDKResponseObject *responseObject)
-//     {
-//         
-//         NSLog(@"responseObject %@", responseObject.user);
-//         NSLog(@"%@", [NSString stringWithFormat:@"%@ authenticated!", responseObject.user.firstName]);
-//         
-//         
-//         // 2) Get pins for a particular pinterest board
-//         [[PDKClient sharedInstance] getBoardPins:BOARD_ID fields:[NSSet setWithArray:@[@"id", @"image", @"url"]] withSuccess:^(PDKResponseObject *responseObject) {
-//             
-//             // We got the pins back, refresh the collection view
-//             self.pins = responseObject.pins;
-//             [self.collectionView reloadData];
-//             
-//             
-//         } andFailure:^(NSError *error) {
-//             NSLog(@"error %@", error);
-//         }];
-//         
-//     } andFailure:^(NSError *error) {
-//         NSLog(@"error %@", error);
-//     }];
-//}
-//
+- (IBAction)authenticateDidPressed:(UIButton *)sender {
+     self.sharedInfo = [SharedProfileInfo sharedObject];
+    
+// self.sharedInfo.boardIdent=@"91620242358275162";
+    
+#define BOARD_ID ( self.sharedInfo.boardIdent)
+    
+    // 1) Shows diaglouge to authenticate user with Pinterest for the first time, we are only requesting read permission with the constante
+    [[PDKClient sharedInstance] authenticateWithPermissions:@[PDKClientReadPublicPermissions]
+                                         fromViewController:self
+                                                withSuccess:^(PDKResponseObject *responseObject)
+     {
+         
+         NSLog(@"responseObject %@", responseObject.user);
+         NSLog(@"%@", [NSString stringWithFormat:@"%@ authenticated!", responseObject.user.firstName]);
+         
+         
+         // 2) Get pins for a particular pinterest board
+         [[PDKClient sharedInstance] getBoardPins:BOARD_ID fields:[NSSet setWithArray:@[@"id", @"image", @"url"]] withSuccess:^(PDKResponseObject *responseObject) {
+             
+             // We got the pins back, refresh the collection view
+             self.pins = responseObject.pins;
+             [self.collectionView reloadData];
+             
+             
+         } andFailure:^(NSError *error) {
+             NSLog(@"error %@", error);
+         }];
+         
+     } andFailure:^(NSError *error) {
+         NSLog(@"error %@", error);
+     }];
+}
+
 
 // We want the collection view to have as many cells as the pins array
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
@@ -85,11 +90,11 @@
     // Get the image url for the pin
     NSURL *pinURL = [pin largestImage].url;
     
-    cell.urlString = pinURL.absoluteString;
+    cell.urlString = pin.pinURL.absoluteString;
     
     // TODO: - Use 3rd party libary to load image url into imageview of the cell
     
-    NSData * imageData = [[NSData alloc] initWithContentsOfURL: [NSURL URLWithString: cell.urlString]];
+    NSData * imageData = [[NSData alloc] initWithContentsOfURL: pinURL];
     // long row = [indexPath row];
     //    image = [UIImage imageNamed:_myImages[row]];
     cell.imageView.image = [UIImage imageWithData:imageData];

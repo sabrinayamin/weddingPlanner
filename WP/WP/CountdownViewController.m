@@ -27,16 +27,19 @@
     
     self.sharedProfile = [SharedProfileInfo sharedObject];
     
-    NSDate* testDate= [self.sharedProfile theDate ];
-    
+    //NSDate* testDate= [self.sharedProfile theDate];
+      _weddingDate= self.datePicker.date;
+//    self.sharedProfile.wedDate= _weddingDate;
     //NSString *text = [NSString stringWithFormat:@"%@",  @(testDate)];
     
-    NSLog(@"%@", testDate);
+    NSLog(@"look here!!!!!");
+    NSLog(@"%@", _weddingDate);
+    NSLog(@"%@", [self.sharedProfile theDate]);
     
     // make date picker color white
     [_datePicker setValue:[UIColor whiteColor] forKeyPath:@"textColor"];
     
-     _weddingDate= self.datePicker.date;
+   
 }
 
 - (void)didReceiveMemoryWarning {
@@ -70,10 +73,19 @@
 //    
 //    NSDate *testdatee=self.datePicker.date;
 //    NSLog(@"%@", testdatee);
+    
+      _weddingDate= self.datePicker.date;
+       self.sharedProfile.wedDate= _weddingDate;
 
-    _weddingDate= self.datePicker.date;
+  
     NSLog(@"look here");
     NSLog(@"%@", _weddingDate);
+     NSLog(@"%@", self.sharedProfile.wedDate);
+    
+}
+- (IBAction)datePickerDidChange:(UIDatePicker *)sender {
+    NSLog(@"datePickerDidChange");
+    self.sharedProfile.wedDate = self.datePicker.date;
 }
 
 // method to update label with current time status

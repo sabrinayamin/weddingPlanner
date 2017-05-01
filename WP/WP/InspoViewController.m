@@ -7,10 +7,19 @@
 //
 
 #import "InspoViewController.h"
+#import "PinViewController.h"
+#import "SharedProfileInfo.h"
+
+#import <PinterestSDK/PDKClient.h>
+#import <PinterestSDK/PDKResponseObject.h>
+#import <PinterestSDK/PDKUser.h>
+#import <PinterestSDK/PDKBoard.h>
+#import <PinterestSDK/PDKPin.h>
+#import <PinterestSDK/PDKImageInfo.h>
 
 @interface InspoViewController ()
 
-
+@property (nonatomic, strong) SharedProfileInfo *sharedInfo;
 
 @end
 
@@ -19,6 +28,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.sharedInfo = [SharedProfileInfo sharedObject];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,53 +44,64 @@
     NSURL *URL;
     
     if (sender.tag==100){
-        URL = [NSURL URLWithString:@"https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=cat"];
+        
+        self.sharedInfo.boardIdent=@"91620242358274089";
+        
+     
 
     }
     
     else if (sender.tag==200){
-        URL = [NSURL URLWithString:@"https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=cat"];
+        
+        self.sharedInfo.boardIdent=@"91620242358275148";
+       
     }
     
     
     else if (sender.tag==300){
-        URL = [NSURL URLWithString:@"https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=cat"];
-
+       
+        self.sharedInfo.boardIdent=@"91620242358275146";
     }
     
     else if (sender.tag==400){
-        URL = [NSURL URLWithString:@"https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=cat"];
+        
+        self.sharedInfo.boardIdent=@"240661242526565028";
 
     }
     
     else if (sender.tag==500){
-        URL = [NSURL URLWithString:@"https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=cat"];
+      
+        self.sharedInfo.boardIdent=@"252342454060117570";
 
     }
     
     else if (sender.tag==600){
-        URL = [NSURL URLWithString:@"https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=cat"];
+       self.sharedInfo.boardIdent=@"91620242358290629";
 
     }
     
     else if (sender.tag==700){
-        URL = [NSURL URLWithString:@"https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=cat"];
-
+        
+        self.sharedInfo.boardIdent=@"91620242358272220";
     }
     
     else if (sender.tag==800){
-        URL = [NSURL URLWithString:@"https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=cat"];
-
+       self.sharedInfo.boardIdent=@"170433235837513524";
     }
     
     else if (sender.tag==900){
-        URL = [NSURL URLWithString:@"https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=cat"];
-
+      
+        self.sharedInfo.boardIdent=@"73957687569789368";
     }
     
     else if (sender.tag==1000){
-        URL = [NSURL URLWithString:@"https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=cat"];
-
+        
+        self.sharedInfo.boardIdent=@"86764799010055093";
+    }
+    
+    else if (sender.tag==1100){
+        
+        self.sharedInfo.boardIdent=@"87327748963498617";
     }
     
     

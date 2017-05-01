@@ -27,6 +27,12 @@
     
 }
 
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self.nameText resignFirstResponder];
+    [self.notesText resignFirstResponder];
+}
+
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
@@ -114,15 +120,15 @@
 //}
 
 
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    UITouch * touch = [touches anyObject];
-    if(touch.phase == UITouchPhaseBegan) {
-        [self.nameText resignFirstResponder];
-        [self.notesText resignFirstResponder];
-      
-
-    }
-
-}
+//- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+//    UITouch * touch = [touches anyObject];
+//    if(touch.phase == UITouchPhaseBegan) {
+//        [self.nameText resignFirstResponder];
+//        [self.notesText resignFirstResponder];
+//      
+//
+//    }
+//
+//}
 
 @end

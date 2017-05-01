@@ -16,4 +16,7 @@
 - (NSDate*) theDate;
 - (int) theMonth;
 
+@property (nonatomic, strong) NSString* boardIdent;
+@property (nonatomic, readwrite) NSDate* wedDate;
+
 @end

@@ -45,7 +45,7 @@
     
     if (sender.tag == 1)
     {
-        urlString = @"https://www.pinterest.com/search/pins/?q=wedding%20hairstyles%20down&rs=typed&term_meta[]=wedding%7Ctyped&term_meta[]=hairstyles%7Ctyped&term_meta[]=down%7Ctyped";
+        urlString = @"https://www.google.com/search?q=best+hair+salons+for+down+hairstyles&oq=best+hair+salons+for+down+hairstyles&aqs=chrome..69i57j69i64.11359j0j4&sourceid=chrome&ie=UTF-8#tbm=shop&q=down+wedding+hairstyles";
         
         [self.hairTypeLabel setText:@"Down Hair Style"];
         
@@ -54,7 +54,7 @@
     }
     else if (sender.tag == 2)
     {
-        urlString = @"https://www.pinterest.com/search/pins/?q=wedding%20hairstyles%20pony&rs=typed&term_meta[]=wedding%7Ctyped&term_meta[]=hairstyles%7Ctyped&term_meta[]=pony%7Ctyped";
+        urlString = @"https://www.google.com/search?q=best+hair+salons+for+down+hairstyles&oq=best+hair+salons+for+down+hairstyles&aqs=chrome..69i57j69i64.11359j0j4&sourceid=chrome&ie=UTF-8#tbm=shop&q=ponytail+wedding+hairstyles";
         
         [self.hairTypeLabel setText:@"Pony Tail Hair Style"];
         
@@ -66,7 +66,7 @@
     
     else if (sender.tag == 3)
     {
-        urlString = @"https://www.pinterest.com/explore/updo-hairstyle/";
+        urlString = @"https://www.google.com/search?q=best+hair+salons+for+down+hairstyles&oq=best+hair+salons+for+down+hairstyles&aqs=chrome..69i57j69i64.11359j0j4&sourceid=chrome&ie=UTF-8#tbm=shop&q=bun+wedding+hairstyles";
         
         [self.hairTypeLabel setText:@"Bun Hair Style"];
         

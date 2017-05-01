@@ -28,8 +28,14 @@
 
 #import "XYPieChart.h"
 #import <QuartzCore/QuartzCore.h>
+#import "ChartViewController.h"
 
 @interface SliceLayer : CAShapeLayer
+
+
+@property (nonatomic, strong) ChartViewController* chartViewController;
+
+
 @property (nonatomic, assign) CGFloat   value;
 @property (nonatomic, assign) CGFloat   percentage;
 @property (nonatomic, assign) double    startAngle;
@@ -120,6 +126,8 @@ static NSUInteger kDefaultSliceZOrder = 100;
 @synthesize selectedSliceOffsetRadius = _selectedSliceOffsetRadius;
 @synthesize showPercentage = _showPercentage;
 
+
+
 static CGPathRef CGPathCreateArc(CGPoint center, CGFloat radius, CGFloat startAngle, CGFloat endAngle) 
 {
     CGMutablePathRef path = CGPathCreateMutable();
@@ -151,7 +159,7 @@ static CGPathRef CGPathCreateArc(CGPoint center, CGFloat radius, CGFloat startAn
         self.pieRadius = MIN(frame.size.width/2, frame.size.height/2) - 10;
         self.pieCenter = CGPointMake(frame.size.width/2, frame.size.height/2);
         self.labelFont = [UIFont boldSystemFontOfSize:MAX((int)self.pieRadius/10, 5)];
-        _labelColor = [UIColor whiteColor];
+        _labelColor = [UIColor clearColor];
         _labelRadius = _pieRadius/2;
         _selectedSliceOffsetRadius = MAX(10, _pieRadius/10);
         
@@ -192,7 +200,7 @@ static CGPathRef CGPathCreateArc(CGPoint center, CGFloat radius, CGFloat startAn
         self.pieRadius = MIN(bounds.size.width/2, bounds.size.height/2) - 10;
         self.pieCenter = CGPointMake(bounds.size.width/2, bounds.size.height/2);
         self.labelFont = [UIFont boldSystemFontOfSize:MAX((int)self.pieRadius/10, 5)];
-        _labelColor = [UIColor whiteColor];
+        _labelColor = [UIColor clearColor];
         _labelRadius = _pieRadius/2;
         _selectedSliceOffsetRadius = MAX(10, _pieRadius/10);
         
@@ -232,10 +240,14 @@ static CGPathRef CGPathCreateArc(CGPoint center, CGFloat radius, CGFloat startAn
     {
         CATextLayer *textLayer = [[layer sublayers] objectAtIndex:0];
         [textLayer setHidden:!_showLabel];
-        if(!_showLabel) return;
+        if(!_showLabel)
+            return;
         NSString *label;
         if(_showPercentage)
-            label = [NSString stringWithFormat:@"%0.0f", layer.percentage*100];
+            
+           label = [NSString stringWithFormat:@"%0.0f", layer.percentage*100];
+//             label = [NSString stringWithFormat:@"%@", label];
+        
         else
             label = (layer.text)?layer.text:[NSString stringWithFormat:@"%0.0f", layer.value];
         CGSize size = [label sizeWithFont:self.labelFont];
@@ -249,6 +261,7 @@ static CGPathRef CGPathCreateArc(CGPoint center, CGFloat radius, CGFloat startAn
             [textLayer setString:label];
             [textLayer setBounds:CGRectMake(0, 0, size.width, size.height)];
         }
+        NSLog(@"look %d", layer.chartViewController.budget);
     }
 }
 
@@ -495,7 +508,7 @@ static CGPathRef CGPathCreateArc(CGPoint center, CGFloat radius, CGFloat startAn
         
         if (CGPathContainsPoint(path, &transform, point, 0)) {
             [pieLayer setLineWidth:_selectedSliceStroke];
-            [pieLayer setStrokeColor:[UIColor whiteColor].CGColor];
+            [pieLayer setStrokeColor:[UIColor clearColor].CGColor];
             [pieLayer setLineJoin:kCALineJoinBevel];
             [pieLayer setZPosition:MAXFLOAT];
             selectedIndex = idx;
@@ -637,8 +650,8 @@ static CGPathRef CGPathCreateArc(CGPoint center, CGFloat radius, CGFloat startAn
     if (self.labelShadowColor) {
         [textLayer setShadowColor:self.labelShadowColor.CGColor];
         [textLayer setShadowOffset:CGSizeZero];
-        [textLayer setShadowOpacity:1.0f];
-        [textLayer setShadowRadius:2.0f];
+        [textLayer setShadowOpacity:0.0f];
+        [textLayer setShadowRadius:0.0f];
     }
     CGSize size = [@"0" sizeWithFont:self.labelFont];
     [CATransaction setDisableActions:YES];
@@ -657,8 +670,13 @@ static CGPathRef CGPathCreateArc(CGPoint center, CGFloat radius, CGFloat startAn
     NSString *label;
     if(_showPercentage)
         label = [NSString stringWithFormat:@"%0.0f", pieLayer.percentage*100];
+//          label = [NSString stringWithFormat:@"%d", pieLayer.chartViewController.spent];
+//        label= @"hi";
     else
+        
         label = (pieLayer.text)?pieLayer.text:[NSString stringWithFormat:@"%0.0f", value];
+//        label = [NSString stringWithFormat:@"%d", pieLayer.chartViewController.remainderBudget];
+//        label= @"bye";
     
     CGSize size = [label sizeWithFont:self.labelFont];
     

@@ -8,6 +8,10 @@
 
 #import "PinCollectionViewCell.h"
 
+#import "PinViewController.h"
+#import <PinterestSDK/PDKBoard.h>
+#import "PDKClient.h"
+
 @implementation PinCollectionViewCell
 - (IBAction)btnLinkAction:(id)sender {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:self.urlString ]];

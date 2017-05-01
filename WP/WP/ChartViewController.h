@@ -15,6 +15,11 @@
 @property (weak, nonatomic) IBOutlet UITextField *amountField;
 @property (weak, nonatomic) IBOutlet UIButton *updateButton;
 @property (weak, nonatomic) IBOutlet UITextField *spentField;
+@property (weak, nonatomic) IBOutlet UILabel *remainderDisplay;
+
+@property int budget;
+@property int spent;
+@property int remainderBudget;
 
 
 @end

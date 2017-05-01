@@ -7,7 +7,7 @@ target 'WP' do
 
   # Pods for WP
   # pod “PinterestSDK”, :git => “git@github.com:pinterest/ios-pdk.git”
-  pod 'PinterestSDK', '~> 1.0'
+    pod 'PinterestSDK', :git => 'git@github.com:pinterest/ios-pdk.git'
   
   pod 'InstagramKit', '~> 3.8'
   

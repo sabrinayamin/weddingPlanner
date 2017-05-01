@@ -45,18 +45,18 @@
     
     if (sender.tag == 1)
     {
-        urlString = @"https://www.pinterest.com/search/pins/?q=wedding%20makeup&rs=typed&term_meta[]=wedding%7Ctyped&term_meta[]=makeup%7Ctyped";
+        urlString = @"https://www.google.com/search?q=best+hair+salons+for+down+hairstyles&oq=best+hair+salons+for+down+hairstyles&aqs=chrome..69i57j69i64.11359j0j4&sourceid=chrome&ie=UTF-8#tbm=shop&q=face+makeup";
         
-        [self.makeupTypeLabel setText:@"Full Face Makeup Looks"];
+        [self.makeupTypeLabel setText:@"Face Makeup"];
         
         
         
     }
     else if (sender.tag == 2)
     {
-        urlString = @"https://www.pinterest.com/search/pins/?q=wedding%20makeup%20eyes&rs=typed&term_meta[]=wedding%7Ctyped&term_meta[]=makeup%7Ctyped&term_meta[]=eyes%7Ctyped";
+        urlString = @"https://www.google.com/search?q=best+hair+salons+for+down+hairstyles&oq=best+hair+salons+for+down+hairstyles&aqs=chrome..69i57j69i64.11359j0j4&sourceid=chrome&ie=UTF-8#tbm=shop&q=eye+makeup";
         
-        [self.makeupTypeLabel setText:@"Eye Makeup Looks"];
+        [self.makeupTypeLabel setText:@"Eye Makeup"];
         
         
         
@@ -66,9 +66,9 @@
     
     else if (sender.tag == 3)
     {
-        urlString = @"https://www.pinterest.com/search/pins/?q=wedding%20makeup%20lips&rs=typed&term_meta[]=wedding%7Ctyped&term_meta[]=makeup%7Ctyped&term_meta[]=lips%7Ctyped";
+        urlString = @"https://www.google.com/search?q=best+hair+salons+for+down+hairstyles&oq=best+hair+salons+for+down+hairstyles&aqs=chrome..69i57j69i64.11359j0j4&sourceid=chrome&ie=UTF-8#tbm=shop&q=wedding+lipstick";
         
-        [self.makeupTypeLabel setText:@"Lip Makeup Looks"];
+        [self.makeupTypeLabel setText:@"Lip Makeup"];
         
         
         

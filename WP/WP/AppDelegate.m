@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import <PinterestSDK/PDKClient.h>
-#import "Constants.h"
+//#import "Constants.h"
 
 @interface AppDelegate ()
 
@@ -20,7 +20,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    [PDKClient configureSharedInstanceWithAppId:PINTEREST_APP_ID];
+   // [PDKClient configureSharedInstanceWithAppId:PINTEREST_APP_ID];
 
     
     return YES;

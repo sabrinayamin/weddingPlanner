@@ -11,6 +11,9 @@
 @interface SharedProfileInfo()
 
 @property (readwrite) NSDate* date;
+@property (nonatomic, readwrite) NSString* boardIdentt;
+//@property (nonatomic, readwrite) NSDate* wedDate;
+
 //@property (readwrite) NSString *stringDate;
 
 @end
@@ -34,7 +37,7 @@
         
         NSDateComponents *comps = [[NSDateComponents alloc] init];
         [comps setDay:10];
-        [comps setMonth:10];
+        [comps setMonth:11];
         [comps setYear:2010];
         NSDate *testDate = [[NSCalendar currentCalendar] dateFromComponents:comps];
         _date= testDate;
@@ -47,6 +50,8 @@
     return self.date;
     
 }
+
+
 
 - (int ) theMonth{
     
